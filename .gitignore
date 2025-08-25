@@ -1,0 +1,118 @@
+# =============================================================================
+# MATLAB .gitignore
+# Comprehensive gitignore for MATLAB projects
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# MATLAB-specific files and directories
+# -----------------------------------------------------------------------------
+
+# Compiled MEX files (platform-specific binary files)
+*.mex*
+*.mexw32
+*.mexw64
+*.mexa64
+*.mexmaci64
+*.mexmaca64
+
+# MATLAB temporary and backup files
+*.m~          # MATLAB editor backup files
+*.asv         # MATLAB autosave files
+*.slxc        # Simulink cache files
+
+# MATLAB workspace files (uncomment if you want to exclude all .mat files)
+# *.mat
+
+# MATLAB App Designer temporary files
+*.mlapp~
+
+# MATLAB code generation and cache directories
+codegen/
+slprj/          # Simulink project cache
+sccprj/         # Simulink cache directory
+
+# MATLAB Compiler generated files
+*.ctf
+*.prj~
+
+# MATLAB Report Generator temporary files
+*.rpt
+
+# MATLAB Profiler files
+profile_results/
+
+# -----------------------------------------------------------------------------
+# Operating System files
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# -----------------------------------------------------------------------------
+# Editor and IDE files
+# -----------------------------------------------------------------------------
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# -----------------------------------------------------------------------------
+# Version control and backup files
+# -----------------------------------------------------------------------------
+
+# Git
+*.orig
+*.rej
+
+# SVN
+.svn/
+
+# Mercurial
+.hg/
+.hgignore
+
+# Backup files
+*.bak
+*.backup
+*~
