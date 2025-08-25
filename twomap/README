@@ -1,0 +1,51 @@
+           Attractor Bump Model with Two Maps
+
+Copyright (c) 1999 by David S. Touretzky, and
+(c) 2000-2002 by David S. Touretzky and Marios Savvides.
+
+Follows the equations in: 
+  Goodridge, J.P. and Touretzky, D. S. (2000) Modeling
+  attractor deformation in the rodent head direction system.
+  Journal of Neurophysiology, 83(6):3402-3410.
+
+Original version created April, 1999 by David S. Touretzky.  Modified
+June 2000 by David S. Touretzky and Marios Savvides to overlay two
+attractor maps and allow external input to make the bump jump from one
+map to the other.
+
+================================================================
+
+Instructions for use:
+
+This software requires MATLAB version 5 or higher.
+
+To run the model, type "twomap".
+
+Mouse on one of the flanks of the bump, in either map, to supply
+external input and make the attractor bump move.  The height of the
+mouse above the x-axis determines the magnitude of the external input.
+Multiple mouse clicks have additive effects.
+
+Turn on "Input Hold" to suspend decay of external input.
+
+To get the bump to switch maps, supply strong external input anywhere
+in the other map.  (You may want to use Input Hold for this.)  This
+will cause the bump in the current map to collapse as a new bump forms
+in the second map.
+
+================================================================
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+

@@ -1,0 +1,6 @@
+1.  Add histogram bars to show various tilings of the data.
+
+2.  Add a lesion button to replace a random rectangular region
+    of cmac_memory with NaN values.
+
+3.  Replace learning rate edit box with a slider.

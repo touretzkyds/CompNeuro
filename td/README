@@ -1,0 +1,11 @@
+Temporal Difference learning demos.
+
+TD1 - a single CS predicts a US 6 timesteps later.
+
+TD2 - a pair of CSes predict the US:  CS1 followed by CS2.
+
+To run these demos, type "td1" or "td2".
+
+To run in single-step mode, do:   pause_every_step=1
+
+To cancel single-step mode, type "clear all"

@@ -1,0 +1,31 @@
+MATMEM -- a demonstration of hetero-associative matrix memory.
+
+Davd S. Touretzky
+Carnegie Mellon University
+January, 1999.
+
+================================================================
+
+To run the demo, type "matmem".
+
+Click on "New" to delete all memory items and start fresh.
+Click on "Random" to generate a random set of memory items.
+Click on a memory item button to store the item; click again to remove it.
+Click on Set to store all the memory items (sets all the buttons.)
+Click on "Reset" to un-set all the buttons.
+Click on "Delete" followed by a memory item button to delete that item.
+
+Click on the "Dense"/"Sparse" button to change between representations.
+
+You can create items of your own by typing data into the text boxes
+provided; then click on an empty memory item button to copy the item
+to the button and store it.
+
+You can also click on individual input or output bits or individual
+weight bits to toggle their state.  Once a pattern has been entered
+into the input and output bits, the small red "S" button will store
+that pattern in the weight matrix using the outer product formula.
+
+The output bits are thresholded.  Blue indicates a value of 0; yellow
+indicates a value of 1 (net activation was above threshold).  Magenta
+indicates that net activation is positive but below threshold.

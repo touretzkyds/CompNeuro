@@ -1,0 +1,21 @@
+CMAC1 -- a one-dimensional CMAC
+
+David S. Touretzky
+Carnegie Mellon University
+March, 2001.
+
+================================================================
+
+Implements the Cerebellar Model Articulation Controller defined by
+James Albus.
+
+Type "run" to run the simulation.
+
+To generate sample points, click anywhere on the green curve.
+Click on "Sample" to sample a point at random.
+Click on "x 10" to sample 10 points at random
+Use the green pop-up menu to change the function being learned.
+Click on "Rehearse" to rehearse all selected training points.
+Change the learning rate by editing the text box.
+Click on the red "Reset" button to clear the memory.
+
