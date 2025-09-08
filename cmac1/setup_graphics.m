@@ -12,9 +12,8 @@
 fig = figure(1);
 fig.Units = 'normalized';
 fig.Position(4) = 0.6;  % Set window height to 60% of screen
-colordef none         % Use default color scheme
 clf reset            % Clear figure and reset properties
-whitebg(gcf,[0 0 0]) % Set background to black for better contrast
+theme(gcf, 'dark')
 set(gcf,'Units','normalized','Name','CMAC Simulation')
 
 % Create memory visualization panel (top-left)
