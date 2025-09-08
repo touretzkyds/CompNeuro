@@ -6,10 +6,11 @@
 % metrics including maximum error and RMS error.
 
 % Update memory visualization (64x64 grid representation of 4096 memory locations)
+s = floor(sqrt(Memsize));
 if bucket_mode == 1
-  m = reshape(cmac_memory,64,64);  % Random mode: show memory as 2D grid
+  m = reshape(cmac_memory,s,s);  % Random mode: show memory as 2D grid
 else
-  m = reshape(cmac_memory,64,64);  % Sequential mode: same visualization
+  m = reshape(cmac_memory,s,s);  % Sequential mode: same visualization
 end
 set(h_mem,'CData',m)  % Update the memory heatmap
 

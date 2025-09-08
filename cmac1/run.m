@@ -12,10 +12,10 @@
 
 % CMAC Architecture Overview:
 % - Input space: circular variable with values 0-359 degrees
-% - Hash tables: 32 separate encodings with overlapping coverage
+% - Hash tables: 10 separate encodings with overlapping coverage
 % - Buckets per hash: 11 regions, each covering ~32.7 degrees
-% - Hash stride: 2 degrees offset between consecutive hash tables
-% - Memory: 4096 total locations, using at most 352 (11*32)
+% - Hash stride: 4 degrees offset between consecutive hash tables
+% - Memory: 4096 total locations, using at most 110 (11*10)
 % - Actual usage may be lower due to hash collisions
 
 % Initialize global variables for GUI interaction
@@ -23,10 +23,10 @@
 last_point = [];  % Tracks the most recently selected input point
 
 % CMAC Memory Configuration
-Memsize = 4096;              % Total memory locations available
-Nhashes = 32;                % Number of overlapping hash tables
+Memsize = 1024;              % Total memory locations available
+Nhashes = 10;                % Number of overlapping hash tables
 Nbuckets_per_hash = 11;      % Number of buckets per hash table
-hash_stride = 2;             % Degree offset between hash table starting positions
+hash_stride = 4;             % Degree offset between hash table starting positions
 
 % Learning Parameters
 g_val = 1;                   % Learning rate (adjustable via GUI)
