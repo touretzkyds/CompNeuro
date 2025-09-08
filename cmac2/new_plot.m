@@ -1,8 +1,7 @@
 
 figure(1)
-colordef white
 clf reset, hold on, axis equal
-whitebg(1,[1 1 1])
+whiteBackground(gcf)
 mx = max_extension + 0.5;
 axis([-mx mx -mx mx])
 set(gca,'ButtonDownFcn','clickhandler')

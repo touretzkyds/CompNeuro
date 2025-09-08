@@ -45,9 +45,8 @@ text(-10,9,'Click the mouse to','Color','r','FontSize',12)
 text(-10,8,'test the memory.','Color','r','FontSize',12)
 
 figure(2),
-colordef black
 clf reset
-whitebg(2,[0 0 0])
+blackBackground(gcf)
 twindow = floor(Ntrain/50);
 plot(50*(1:twindow),mean(reshape(prediction_error(1:50*floor(Ntrain/50)),50,floor(Ntrain/50))))
 title('Training error')
