@@ -8,6 +8,7 @@
 %
 % Copyright (c) 1997, 2005 by David S. Touretzky.
 % Carnegie Mellon University
+% Additional code by Xiaoyang Ma in 2025.
 
 % CMAC Architecture Overview:
 % - Input space: circular variable with values 0-359 degrees
