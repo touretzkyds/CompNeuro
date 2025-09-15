@@ -19,5 +19,3 @@ else
     g_val = new_val;
 end
 
-% Reset simulation to apply the new learning rate
-reset_cmac
