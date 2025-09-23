@@ -7,7 +7,7 @@ function set_button_state(b,v)
   set(b,'Value',v)
 
   if v == 0
-    set(b,'BackgroundColor',[0.7 0.7 0.7])
+    set(b,'BackgroundColor',[0.8 0.8 0.8])
   else
     set(b,'BackgroundColor',[1 0.8 0.8])
   end
