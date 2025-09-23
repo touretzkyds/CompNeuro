@@ -11,6 +11,11 @@ set(gcf, 'Name','Matrix Memory', 'Position', pos)
 blackBackground
 set(gcf, 'Color', [0 0 0])
 hold on; axis([-20 NUNITS -6 NUNITS]); axis off
+if isMATLABReleaseOlderThan('R2025a')
+  buttonForeground = [0 0 0];
+else                                         
+  buttonForeground = [1 1 1];
+end
 
 DELETE_BUTTON_FLAG = 0;
 
@@ -23,7 +28,7 @@ for i = 1:NMEM
       uicontrol('Style','CheckBox', ...
 		'HorizontalAlignment','left', 'FontName','Courier', ...
 		'CallBack', 'toggle_item', ...
-                'ForegroundColor', [0 0 0], ...
+                'ForegroundColor', buttonForeground, ...
 		'Units','normalized','Position',[bx(i) by(i) 0.2 0.049]);
   set(buttons(i),'UserData', ...
       {blanktext,blanktext,blanktext,blankcode,blankcode});
