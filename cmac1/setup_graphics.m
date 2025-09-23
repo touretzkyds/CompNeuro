@@ -9,10 +9,6 @@
 % - Control buttons and parameter inputs
 
 % Create and configure main figure window
-fig = figure(1);
-fig.Units = 'pixels';
-fig.Position(3) = 800;
-fig.Position(4) = 600;
 clf reset            % Clear figure and reset properties
 blackBackground(gcf)
 set(gcf,'Units','normalized','Name','CMAC Simulation')

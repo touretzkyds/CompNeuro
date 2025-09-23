@@ -50,5 +50,8 @@ xline_in = [];
 xline_hist = [];
 xline_out = [];
 
+% Create the window and set its initial size
+init_window
+
 % Configure bucket boundaries and memory assignments
 setup_buckets
