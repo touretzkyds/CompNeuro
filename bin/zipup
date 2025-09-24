@@ -1,0 +1,4 @@
+#!/bin/bash
+
+\rm -f .zipfiles/$1.zip
+zip -r .zipfiles/$1.zip $1

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+zip -r CompNeuro.zip aplysia bp bump cmac1 cmac2 gluck-hw hh hill2d ltp matmem pca popvec rescwag simplemat td twomap
