@@ -1,6 +1,6 @@
 % setup_display
 
-colordef none, clf reset, whitebg(gcf,[0 0 0])
+blackBackground
 set(gcf,'Backingstore','off')
 
 axis([1 NEUNITS 0 1])
