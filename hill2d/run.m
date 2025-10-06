@@ -8,7 +8,7 @@ SI = 1.7;
 External = SE*0;
 
 figure(1)
-clf, whitebg(gcf,[0 0 0])
+clf, blackBackground
 colormap(jet)
 hsurf = surf(reshape(SE,N,N));
 axis([0 N 0 N 0 15])
