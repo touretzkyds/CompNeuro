@@ -1,25 +1,21 @@
 % setup_display
 
+clf reset
 blackBackground
 set(gcf,'Backingstore','off')
 
 axis([1 NEUNITS 0 1])
 hold on
 set(gca,'Position',[0.1 0.2 0.8 0.7])
-set(gca,'Drawmode','fast')
 set(gca,'ButtonDownFcn','clickhandler')
 xlabel('Use the mouse to supply external input')
-if strcmp(computer,'PCWIN')
-    ermode = 'normal';
-else
-    ermode = 'background';
-end
+
 h_bump = plot(zeros(NEUNITS,1),'yo', ...
-	'EraseMode',ermode,'ButtonDownFcn','clickhandler');
+	'ButtonDownFcn','clickhandler');
 h_inhib = plot([0 NEUNITS],[0 0],'c', ...
-	'EraseMode','background','ButtonDownFcn','clickhandler');
+	'ButtonDownFcn','clickhandler');
 h_inp = plot(zeros(NEUNITS,1),'r','LineWidth',2,...
-	'EraseMode','background','ButtonDownFcn','clickhandler');
+	'ButtonDownFcn','clickhandler');
 h_title = title('');
 
 bias_slider = uicontrol('Style','Slider','Tag','Bias', ...
