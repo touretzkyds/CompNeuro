@@ -1,11 +1,11 @@
 % setup_display.m
 
-colordef none
-clf reset, whitebg(gcf,[0 0 0])
+clf reset, blackBackground
 set(gcf,'Backingstore','off')
 
-ax1 = axes ('position',[0.1 0.6 0.85 0.32]);
+ax1 = axes('position',[0.1 0.6 0.85 0.32]);
 set(ax1,'ButtonDownFcn','clickhandler')
+axis(ax1);
 axis([1 NEUNITS 0 1])
 h_title = title('');
 ylabel('Map 1')
@@ -17,6 +17,7 @@ h_inp1 = plot(zeros(NEUNITS,1),'r+','ButtonDownFcn','clickhandler');
 
 ax2 = axes ('position',[0.1 0.2 0.85 0.32]);
 set(ax2,'ButtonDownFcn','clickhandler')
+axis(ax2);
 axis([1 NEUNITS 0 1])
 set(ax2,'XtickLabel',p2(get(ax2,'XTick')))
 ylabel('Map 2')
