@@ -16,7 +16,7 @@ scaled_eta = eta / Npts;
 x = randn(1,Npts)*2 + (rand(1)*3+1)*sign(rand(1)-0.5);
 
 figure(gcf)
-clf, whitebg(gcf,[0 0 0])
+clf, blackBackground
 h1 = subplot(2,1,1);
 x_pts = -10:0.2:10;
 Nbins = length(x_pts);

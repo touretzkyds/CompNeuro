@@ -27,7 +27,8 @@ rpts = rpts - mean(rpts,2)*ones(1,Npts); % assure zero mean
 
 % plot the axes (white lines), training set (red dots), and mean (blue circle)
 figure(gcf)
-clf, whitebg(gcf,[0 0 0]), hold on
+clf, blackBackground
+hold on
 axis([-2.5 2.5 -1.2 1.2])
 plot([-50 50],[0 0],'w--')
 plot([0 0],[-50 50],'w--')

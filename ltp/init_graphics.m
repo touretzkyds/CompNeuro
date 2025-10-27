@@ -5,7 +5,7 @@ function init_graphics
 
   clf reset
   set(gcf,'Name','Synaptic Learning Rules')
-  bgcol = [0 0 0]; whitebg(gcf,bgcol); set(gcf,'Color',bgcol)
+  blackBackground
 
   axplot = axes('Position',[0.05 0.40 0.6 0.5]); axis off
   axdata = axes('Position',[0.05 0.15 0.6 0.2]); axis off
@@ -88,6 +88,8 @@ function init_graphics
   buttons.lmax  = make_parmbutton('\lambda_{max}','lmax');
   buttons.lmin  = make_parmbutton('\lambda_{min}','lmin');
   buttons.w0    = make_parmbutton('w_{AB}(0)','w0');
+
+set(gcf, 'Color', [0 0 0])
 
 % ----------------------------------------------------------------
 

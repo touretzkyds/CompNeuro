@@ -25,7 +25,7 @@ x = A*pts;
 x = x - mean(x,2)*ones(1,Npts); % assure zero mean
 
 figure(gcf)
-clf, whitebg(gcf,[0 0 0])
+clf, blackBackground
 hold on
 plot(x(1,:),x(2,:),'r.','MarkerSize',4)  % plot the data set as red dots
 axis([-2.5 2.5 -1.2 1.2])
