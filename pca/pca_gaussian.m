@@ -64,8 +64,9 @@ for epoch = 1:Nepochs;  % main loop
       % hp = plot(spts(1,:),spts(2,:),'y.','MarkerSize',4); % non-PCA1 subspace (yellow dots)
       hm1 = plot(M1(1,:),M1(2,:),'g.','MarkerSize',4);  % memory of past W values (green dots)
       hm2 = plot(M2(1,:),M2(2,:),'g.','MarkerSize',4);
-      hw1=plot([0 W1(1)],[0 W1(2)],'c'); % current W vectors (blue lines)
+      hw1=plot([0 W1(1)],[0 W1(2)],'c'); % current W vectors (cyan line, magenta line)
       hw2=plot([0 W2(1)],[0 W2(2)],'m');
+      legend('','','','','','pc1','pc2')
       xlabel(sprintf('%d epochs, |W1|=%5.3f, |W2|=%5.3f, angle=%5.2f deg.', ...
 		     epoch, norm(W1), norm(W2), ...
 		     acos(dot(W1,W2)/norm(W1)/norm(W2))*180/pi))

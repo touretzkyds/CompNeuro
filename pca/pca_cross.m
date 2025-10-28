@@ -54,8 +54,9 @@ for epoch = 1:Nepochs;  % main loop
     delete([hw1 hw2 hm1 hm2 hp]);
     hm1 = plot(M1(1,:),M1(2,:),'g.','MarkerSize',4);  % memory of past W values (green dots)
     hm2 = plot(M2(1,:),M2(2,:),'g.','MarkerSize',4);
-    hw1=plot([0 W1(1)],[0 W1(2)],'c','LineWidth',2); % current W vectors (blue lines)
+    hw1=plot([0 W1(1)],[0 W1(2)],'c','LineWidth',2); % current W vectors (cyan line, magenta line)
     hw2=plot([0 W2(1)],[0 W2(2)],'m','LineWidth',2);
+    legend('','','','','','pc1','pc2')
     xlabel(sprintf('%d epochs, |W1|=%5.3f, |W2|=%5.3f, angle=%5.2f deg.', ...
                    epoch, norm(W1), norm(W2), ...
                    acos(dot(W1,W2)/norm(W1)/norm(W2))*180/pi))

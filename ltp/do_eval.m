@@ -37,7 +37,7 @@ function do_eval
   end
 
   subplot(axplot)
-  plot(vals)
+  plot(vals,'y')
   axis([0 NPATS min(-0.1,Params.lmin) Params.lmax*1.05])
   grid on
   strs = get(buttons.textobjs,'String');

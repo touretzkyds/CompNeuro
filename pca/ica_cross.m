@@ -59,5 +59,5 @@ for epoch=0:Nepochs
 end
 
 Winv = inv(W);
-Winv / min(min(abs(Winv)))
+Winv = Winv / min(min(abs(Winv)))
 
