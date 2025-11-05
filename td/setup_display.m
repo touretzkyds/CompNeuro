@@ -1,4 +1,6 @@
-figure(1), clf, whitebg(gcf,[0 0 0])
+figure(1), clf
+blackBackground
+set(gcf, 'Color', [0 0 0])
 
 subplot(3,1,1)
 hstim = bar(buffer);
