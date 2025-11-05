@@ -3,13 +3,13 @@ blackBackground
 set(gcf, 'Color', [0 0 0])
 
 subplot(3,1,1)
-hstim = bar(buffer);
+hstim = bar(buffer,'FaceColorMode','manual');
 axis([0 1+buffer_length 0 1.5])
 title('TD Learning Simulation')
 ylabel('Stimuli')
 
 subplot(3,1,2)
-hweights = bar(W,'EdgeColor','w');
+hweights = bar(W,'EdgeColor','w','FaceColorMode','manual');
 axis([0 1+buffer_length -1.2 1.2])
 ylabel('Weights')
 
