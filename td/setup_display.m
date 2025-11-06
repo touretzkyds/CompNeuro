@@ -5,7 +5,7 @@ set(gcf, 'Color', [0 0 0])
 stim1Color = [1 0.55 0.26];
 stim2Color = [0.15 0.8 0.2];  
 stim3Color = [0.9 0.3 1];
-stimColors = [stim1Color; stim2Color; stim3Color]
+stimColors = [stim1Color; stim2Color; stim3Color];
 
 subplot(3,1,1)
 hstim = bar(buffer);
