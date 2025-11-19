@@ -1,5 +1,5 @@
-colordef none
-clf reset, whitebg(gcf, [0 0 0]), hold on
+blackBackground
+clf, hold on
 
 pts = 0:pi/20:(2*pi-1e-4);
 
@@ -16,6 +16,6 @@ set(gca,'Position',[0 0 1 1])
 set(1,'BackingStore','off')
 set(gca,'SortMethod','childorder')
 
-hp = plot(0,0,'m+');
+hp = plot(0,0,'m+','MarkerSize',12);
 
 set(gcf,'WindowButtonMotionFcn','motion2')
